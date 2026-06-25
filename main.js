@@ -55,13 +55,14 @@
   }
 
   function handleLogin(form) {
-    var result = window.AuthController.login(form.username.value, form.password.value);
+    var result = window.AuthController.login(form.email.value, form.password.value);
 
     if (!result.ok) {
       setScreen('login', result.message);
       return;
     }
 
+    state.user = result.user;
     setScreen('health');
   }
 

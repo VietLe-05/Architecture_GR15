@@ -7,9 +7,10 @@
       '<form class="form-stack" data-form="login">',
       ui.alert(message, alertType),
       ui.inputField({
-        id: 'username',
-        label: 'Username',
-        placeholder: 'student01',
+        id: 'email',
+        label: 'Email',
+        type: 'email',
+        placeholder: 'student@example.com',
       }),
       ui.inputField({
         id: 'password',
