@@ -1,0 +1,26 @@
+[
+  {
+    "id": "balanced-green",
+    "name": "Balanced Green Plan",
+    "breakfast": "Oatmeal, banana, and low-fat milk",
+    "lunch": "Grilled chicken, brown rice, and vegetable soup",
+    "dinner": "Steamed fish, sweet potato, and mixed greens",
+    "note": "Simple balanced meals for everyday health."
+  },
+  {
+    "id": "light-fit",
+    "name": "Light Fit Plan",
+    "breakfast": "Boiled eggs, whole wheat toast, and cucumber",
+    "lunch": "Tofu salad, corn, and fruit",
+    "dinner": "Chicken soup with carrots and mushrooms",
+    "note": "A lighter plan with more vegetables and lean protein."
+  },
+  {
+    "id": "energy-plus",
+    "name": "Energy Plus Plan",
+    "breakfast": "Greek yogurt, granola, apple, and nuts",
+    "lunch": "Rice bowl with salmon, egg, and greens",
+    "dinner": "Lean beef stew with potatoes and vegetables",
+    "note": "A higher-energy option for busy working days."
+  }
+]

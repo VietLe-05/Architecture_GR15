@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Android AI Diet Consultant System</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true">AI</div>
+          <div class="brand__text">
+            <h1>AI Diet Consultant</h1>
+            <p>Android-style MVC assignment</p>
+          </div>
+        </div>
+        <div class="screen-chip" id="screenChip">Login</div>
+      </header>
+
+      <main class="app-main">
+        <div id="app" class="screen-host" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <script src="./models/state.js"></script>
+    <script src="./models/mockData.js"></script>
+    <script src="./components/ui.js"></script>
+    <script src="./controllers/authController.js"></script>
+    <script src="./controllers/healthController.js"></script>
+    <script src="./controllers/dietController.js"></script>
+    <script src="./controllers/feedbackController.js"></script>
+    <script src="./views/loginView.js"></script>
+    <script src="./views/registerView.js"></script>
+    <script src="./views/healthInputView.js"></script>
+    <script src="./views/dietPlanView.js"></script>
+    <script src="./views/resultView.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
