@@ -2,10 +2,10 @@
   // Controller: handles final feedback submission.
   function submitFeedback(feedback) {
     if (!feedback.trim()) {
-      return 'Feedback submitted with no extra note.';
+      return 'Đã gửi phản hồi mà không có ghi chú thêm.';
     }
 
-    return 'Feedback submitted successfully.';
+    return 'Phản hồi đã được gửi thành công.';
   }
 
   window.FeedbackController = {

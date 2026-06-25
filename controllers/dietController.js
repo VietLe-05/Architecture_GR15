@@ -5,11 +5,11 @@
       return alternativeIndex % window.AppModels.mealPlans.length;
     }
 
-    if (metrics.bmiStatus === 'Underweight') {
+    if (metrics.bmiStatus === 'Thiếu cân') {
       return 2;
     }
 
-    if (metrics.bmiStatus === 'Overweight') {
+    if (metrics.bmiStatus === 'Thừa cân') {
       return 1;
     }
 

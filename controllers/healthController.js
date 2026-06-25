@@ -9,19 +9,19 @@
       profile.weight <= 0 ||
       profile.workingHours <= 0
     ) {
-      return 'Height, weight, and working hours must be greater than zero.';
+      return 'Chiều cao, cân nặng và giờ làm việc phải lớn hơn 0.';
     }
 
     if (profile.height < 80 || profile.height > 230) {
-      return 'Please enter a realistic height in centimeters.';
+      return 'Vui lòng nhập chiều cao hợp lý tính bằng cm.';
     }
 
     if (profile.weight < 20 || profile.weight > 250) {
-      return 'Please enter a realistic weight in kilograms.';
+      return 'Vui lòng nhập cân nặng hợp lý tính bằng kg.';
     }
 
     if (profile.workingHours > 24) {
-      return 'Working hours cannot be more than 24.';
+      return 'Giờ làm việc không thể lớn hơn 24.';
     }
 
     return '';
@@ -34,30 +34,30 @@
 
   function getBMIStatus(bmi) {
     if (bmi < 18.5) {
-      return 'Underweight';
+      return 'Thiếu cân';
     }
 
     if (bmi < 25) {
-      return 'Normal';
+      return 'Bình thường';
     }
 
-    return 'Overweight';
+    return 'Thừa cân';
   }
 
   function calculateCalories(profile, bmiStatus) {
     var activityMultiplier = {
-      Low: 1.25,
-      Medium: 1.45,
-      High: 1.65,
+      Thấp: 1.25,
+      'Trung bình': 1.45,
+      Cao: 1.65,
     }[profile.activityLevel];
 
     var bodyTypeAdjustment = {
-      Thin: 200,
-      Normal: 0,
-      Overweight: -200,
+      Gầy: 200,
+      'Bình thường': 0,
+      'Thừa cân': -200,
     }[profile.bodyType];
 
-    var bmiAdjustment = bmiStatus === 'Underweight' ? 150 : bmiStatus === 'Overweight' ? -250 : 0;
+    var bmiAdjustment = bmiStatus === 'Thiếu cân' ? 150 : bmiStatus === 'Thừa cân' ? -250 : 0;
     var workAdjustment = profile.workingHours > 8 ? 100 : 0;
     var baseCalories = profile.weight * 22;
     var calories = baseCalories * activityMultiplier + bodyTypeAdjustment + bmiAdjustment + workAdjustment;

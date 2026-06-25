@@ -30,7 +30,7 @@
     if (!email.trim() || !password.trim()) {
       return {
         ok: false,
-        message: 'Please enter email and password.',
+        message: 'Vui lòng nhập email và mật khẩu.',
       };
     }
 
@@ -38,14 +38,14 @@
     if (!user) {
       return {
         ok: false,
-        message: 'No registered account found for that email.',
+        message: 'Không tìm thấy tài khoản đã đăng ký với email này.',
       };
     }
 
     if (user.password !== password) {
       return {
         ok: false,
-        message: 'Incorrect password. Please try again.',
+        message: 'Mật khẩu không đúng. Vui lòng thử lại.',
       };
     }
 
@@ -55,7 +55,7 @@
         name: user.name,
         email: user.email,
       },
-      message: 'Login successful. Welcome back.',
+      message: 'Đăng nhập thành công. Chào mừng bạn trở lại.',
     };
   }
 
@@ -63,14 +63,14 @@
     if (!name.trim() || !email.trim() || !password.trim()) {
       return {
         ok: false,
-        message: 'Please fill in name, email, and password.',
+        message: 'Vui lòng nhập đầy đủ tên, email và mật khẩu.',
       };
     }
 
     if (findUserByEmail(email)) {
       return {
         ok: false,
-        message: 'This email is already registered. Please log in or use another email.',
+        message: 'Email này đã được đăng ký. Vui lòng đăng nhập hoặc dùng email khác.',
       };
     }
 
@@ -88,7 +88,7 @@
         name: name.trim(),
         email: email.trim(),
       },
-      message: 'Register success. Please login.',
+      message: 'Đăng ký thành công. Vui lòng đăng nhập.',
     };
   }
 

@@ -4,7 +4,7 @@
     var ui = window.AppComponents;
 
     if (!plan) {
-      return ui.card('Diet Plan Screen', '', ui.alert('No diet plan found.', 'error'), true);
+      return ui.card('Màn hình kế hoạch', '', ui.alert('Chưa có kế hoạch dinh dưỡng.', 'error'), true);
     }
 
     var content = [
@@ -12,25 +12,25 @@
       ui.alert(message, 'info'),
       '<div class="metrics">',
       '<div class="metric"><span class="label-small">BMI</span><strong>' + ui.escapeHtml(plan.bmi) + '</strong></div>',
-      '<div class="metric"><span class="label-small">Status</span><strong>' + ui.escapeHtml(plan.bmiStatus) + '</strong></div>',
-      '<div class="metric"><span class="label-small">Calories</span><strong>' + ui.escapeHtml(plan.calories) + ' kcal</strong></div>',
+      '<div class="metric"><span class="label-small">Tình trạng</span><strong>' + ui.escapeHtml(plan.bmiStatus) + '</strong></div>',
+      '<div class="metric"><span class="label-small">Calo</span><strong>' + ui.escapeHtml(plan.calories) + ' kcal</strong></div>',
       '</div>',
       '<div class="meal-list">',
-      '<div class="meal-row"><span class="label-small">Breakfast</span><p>' + ui.escapeHtml(plan.breakfast) + '</p></div>',
-      '<div class="meal-row"><span class="label-small">Lunch</span><p>' + ui.escapeHtml(plan.lunch) + '</p></div>',
-      '<div class="meal-row"><span class="label-small">Dinner</span><p>' + ui.escapeHtml(plan.dinner) + '</p></div>',
+      '<div class="meal-row"><span class="label-small">Bữa sáng</span><p>' + ui.escapeHtml(plan.breakfast) + '</p></div>',
+      '<div class="meal-row"><span class="label-small">Bữa trưa</span><p>' + ui.escapeHtml(plan.lunch) + '</p></div>',
+      '<div class="meal-row"><span class="label-small">Bữa tối</span><p>' + ui.escapeHtml(plan.dinner) + '</p></div>',
       '</div>',
       ui.alert(plan.note, 'success'),
-      '<div class="status-line">Current status: <strong>' + ui.escapeHtml(status) + '</strong></div>',
+      '<div class="status-line">Trạng thái hiện tại: <strong>' + ui.escapeHtml(status) + '</strong></div>',
       '<div class="button-row">',
-      ui.button('Accept Plan', 'accept-plan', 'primary', 'button', true),
-      ui.button('Reject Plan', 'reject-plan', 'secondary', 'button', true),
+      ui.button('Chấp nhận', 'accept-plan', 'primary', 'button', true),
+      ui.button('Tạo lại kế hoạch', 'reject-plan', 'secondary', 'button', true),
       '</div>',
-      ui.button('Back', 'back-health', 'ghost', 'button', true),
+      ui.button('Quay lại', 'back-health', 'ghost', 'button', true),
       '</div>',
     ].join('');
 
-    return ui.card(plan.name, 'Suggested diet plan from mock data.', content, false);
+    return ui.card(plan.name, 'Kế hoạch dinh dưỡng đề xuất từ dữ liệu mẫu.', content, false);
   }
 
   window.DietPlanView = {

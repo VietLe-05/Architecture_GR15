@@ -9,7 +9,7 @@
       '<div class="health-grid">',
       ui.inputField({
         id: 'height',
-        label: 'Height',
+        label: 'Chiều cao',
         type: 'number',
         min: '1',
         step: '0.1',
@@ -18,7 +18,7 @@
       }),
       ui.inputField({
         id: 'weight',
-        label: 'Weight',
+        label: 'Cân nặng',
         type: 'number',
         min: '1',
         step: '0.1',
@@ -27,34 +27,34 @@
       }),
       ui.selectField({
         id: 'bodyType',
-        label: 'Body Type',
+        label: 'Kiểu cơ thể',
         value: profile.bodyType,
         options: models.bodyTypes,
       }),
       ui.inputField({
         id: 'workingHours',
-        label: 'Working Hours',
+        label: 'Giờ làm việc',
         type: 'number',
         min: '1',
         step: '1',
         value: profile.workingHours,
-        unit: 'hours',
+        unit: 'giờ',
       }),
       ui.selectField({
         id: 'activityLevel',
-        label: 'Activity Level',
+        label: 'Mức độ vận động',
         value: profile.activityLevel,
         options: models.activityLevels,
       }),
       '</div>',
       '<div class="button-row">',
-      ui.button('Calculate Diet Plan', '', 'primary', 'submit', true),
-      ui.button('Reset', 'reset-health', 'secondary', 'button', true),
+      ui.button('Tính kế hoạch dinh dưỡng', '', 'primary', 'submit', true),
+      ui.button('Đặt lại', 'reset-health', 'secondary', 'button', true),
       '</div>',
       '</form>',
     ].join('');
 
-    return ui.card('Health Input Screen', 'Enter health information for BMI and calories.', content, false);
+    return ui.card('Màn hình sức khỏe', 'Nhập thông tin sức khỏe để tính BMI và calo.', content, false);
   }
 
   window.HealthInputView = {
