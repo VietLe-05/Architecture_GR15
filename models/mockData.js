@@ -1,7 +1,7 @@
 (function () {
   // Model: data initialized as empty and loaded via fetch.
-  window.AppModels.bodyTypes = ['Thin', 'Normal', 'Overweight'];
-  window.AppModels.activityLevels = ['Low', 'Medium', 'High'];
+  window.AppModels.bodyTypes = ['Gầy', 'Bình thường', 'Thừa cân'];
+  window.AppModels.activityLevels = ['Thấp', 'Trung bình', 'Cao'];
   window.AppModels.mealPlans = [];
 
   // Function to fetch data from the JSON file

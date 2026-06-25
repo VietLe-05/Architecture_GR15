@@ -1,26 +1,26 @@
 [
   {
     "id": "balanced-green",
-    "name": "Balanced Green Plan",
-    "breakfast": "Oatmeal, banana, and low-fat milk",
-    "lunch": "Grilled chicken, brown rice, and vegetable soup",
-    "dinner": "Steamed fish, sweet potato, and mixed greens",
-    "note": "Simple balanced meals for everyday health."
+    "name": "Kế hoạch Xanh Cân bằng",
+    "breakfast": "Bột yến mạch, chuối và sữa tách béo",
+    "lunch": "Gà nướng, cơm gạo lứt và canh rau",
+    "dinner": "Cá hấp, khoai lang và rau trộn",
+    "note": "Bữa ăn cân bằng đơn giản cho sức khỏe hàng ngày."
   },
   {
     "id": "light-fit",
-    "name": "Light Fit Plan",
-    "breakfast": "Boiled eggs, whole wheat toast, and cucumber",
-    "lunch": "Tofu salad, corn, and fruit",
-    "dinner": "Chicken soup with carrots and mushrooms",
-    "note": "A lighter plan with more vegetables and lean protein."
+    "name": "Kế hoạch Nhẹ Nhàng",
+    "breakfast": "Trứng luộc, bánh mì nguyên cám và dưa chuột",
+    "lunch": "Salad đậu phụ, ngô và trái cây",
+    "dinner": "Canh gà cà rốt nấm",
+    "note": "Kế hoạch nhẹ hơn với nhiều rau và protein nạc."
   },
   {
     "id": "energy-plus",
-    "name": "Energy Plus Plan",
-    "breakfast": "Greek yogurt, granola, apple, and nuts",
-    "lunch": "Rice bowl with salmon, egg, and greens",
-    "dinner": "Lean beef stew with potatoes and vegetables",
-    "note": "A higher-energy option for busy working days."
+    "name": "Kế hoạch Năng lượng",
+    "breakfast": "Sữa chua Hy Lạp, granola, táo và hạt",
+    "lunch": "Cơm bát cá hồi, trứng và rau xanh",
+    "dinner": "Hầm thịt bò nạc với khoai tây và rau củ",
+    "note": "Lựa chọn tăng năng lượng cho những ngày làm việc bận rộn."
   }
 ]

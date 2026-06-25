@@ -7,7 +7,7 @@
       ui.alert(message, 'error'),
       ui.inputField({
         id: 'name',
-        label: 'Name',
+        label: 'Tên',
         placeholder: 'Nguyen Van A',
       }),
       ui.inputField({
@@ -19,18 +19,18 @@
       ui.inputField({
         id: 'registerPassword',
         name: 'password',
-        label: 'Password',
+        label: 'Mật khẩu',
         type: 'password',
-        placeholder: 'Create password',
+        placeholder: 'Tạo mật khẩu',
       }),
       '<div class="button-row">',
-      ui.button('Register', '', 'primary', 'submit', true),
-      ui.button('Back to Login', 'back-login', 'secondary', 'button', true),
+      ui.button('Đăng ký', '', 'primary', 'submit', true),
+      ui.button('Quay lại Đăng nhập', 'back-login', 'secondary', 'button', true),
       '</div>',
       '</form>',
     ].join('');
 
-    return ui.card('Register Screen', 'Create a simple mock account.', content, true);
+    return ui.card('Màn hình đăng ký', 'Tạo tài khoản thử nghiệm.', content, true);
   }
 
   window.RegisterView = {

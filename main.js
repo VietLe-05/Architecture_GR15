@@ -5,11 +5,11 @@
   var screenChip = document.getElementById('screenChip');
 
   var screenLabels = {
-    login: 'Login',
-    register: 'Register',
-    health: 'Health Input',
-    diet: 'Diet Plan',
-    result: 'Result',
+    login: 'Đăng nhập',
+    register: 'Đăng ký',
+    health: 'Thông tin sức khỏe',
+    diet: 'Kế hoạch dinh dưỡng',
+    result: 'Kết quả',
   };
 
   function setScreen(screen, message) {
@@ -90,7 +90,7 @@
 
     state.healthProfile = profile;
     state.dietPlan = window.DietController.createDietPlan(profile, 0);
-    state.planStatus = 'Accepted';
+    state.planStatus = 'Đã chấp nhận';
     setScreen('diet');
   }
 
@@ -148,19 +148,19 @@
     }
 
     if (action === 'accept-plan') {
-      setScreen('result', 'Diet plan accepted successfully.');
+      setScreen('result', 'Kế hoạch dinh dưỡng đã được chấp nhận.');
     }
 
     if (action === 'reject-plan') {
       state.dietPlan = window.DietController.createAlternativePlan(state.healthProfile, state.dietPlan);
-      state.planStatus = 'Alternative';
-      setScreen('diet', 'Alternative diet plan generated.');
+      state.planStatus = 'Thay thế';
+      setScreen('diet', 'Đã tạo kế hoạch dinh dưỡng thay thế.');
     }
 
     if (action === 'new-plan') {
       state.healthProfile = window.AppModels.createDefaultHealthProfile();
       state.dietPlan = null;
-      state.planStatus = 'Accepted';
+      state.planStatus = 'Đã chấp nhận';
       setScreen('health');
     }
   });

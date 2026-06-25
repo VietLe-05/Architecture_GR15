@@ -4,9 +4,9 @@
     return {
       height: 170,
       weight: 65,
-      bodyType: 'Normal',
+      bodyType: 'Bình thường',
       workingHours: 8,
-      activityLevel: 'Medium',
+      activityLevel: 'Trung bình',
     };
   }
 
@@ -17,7 +17,7 @@
       user: null,
       healthProfile: createDefaultHealthProfile(),
       dietPlan: null,
-      planStatus: 'Accepted',
+      planStatus: 'Đã chấp nhận',
       message: '',
     },
   };
